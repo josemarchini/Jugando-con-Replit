@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Trash Desmos</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <canvas id="canvas"></canvas>
+  <br>
+
+
+  <p>y =</p>
+  <input id="eq" value="2*x - 8">
+
+  <p id="m"></p>
+
+  <!-- -- -->
+
+  <br>
+  <h3>Some spicy equations:</h3>
+  <div id="list"></div>
+
+  <!-- -- -->
+
+  <p>Detail</p>
+  <input id="detail" value="50">
+  <br>
+  <p>Range</p>
+  <input id="range" value="50">
+  <br>
+  <p>Dot mode</p>
+  <input type="checkbox" id="dot" checked>
+
+  <!-- -- -->
+
+  <p style="margin-top:20px;display:block;color:rgb(100,100,100);font-size:2vw;margin-bottom:3px;">Dot mode is more
+    accurate, but may need a higher detail.<br>One grid square is 5 units high and wide.</p>
+
+  <button onclick="document.getElementById('detail').value=10;document.getElementById('range').value=50;">Reset
+    settings</button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
